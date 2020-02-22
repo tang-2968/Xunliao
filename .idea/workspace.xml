@@ -6,7 +6,23 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d0f8417-b27c-4930-bbad-8a69c4cc9da1" name="Default Changelist" comment="" />
+    <list default="true" id="6d0f8417-b27c-4930-bbad-8a69c4cc9da1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/config/MvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/config/SystemConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/controller/FriendGroupsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/controller/FriendsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/controller/MemberController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/controller/MessagesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/controller/MyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/controller/UserGroupsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/controller/UserGroupsMSGControllerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/controller/UserInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/controller/instrument/Instrument.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject-Controller/target/classes/com/nf/tang/interceptor/FirstInterceptor.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/MyProject-Entity/target/" />
@@ -60,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyProject-Controller/src/main/java/com/nf/tang/controller/UserGroupsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+            <state relative-caret-position="775">
+              <caret line="36" column="53" lean-forward="true" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
               <folding>
                 <element signature="e#1674#1675#0" expanded="true" />
                 <element signature="e#1699#1700#0" expanded="true" />
@@ -237,6 +253,13 @@
       <select />
     </treeState>
   </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="699" />
@@ -251,7 +274,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -466,10 +488,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -666,8 +690,17 @@
       <workItem from="1581734785306" duration="6000" />
       <workItem from="1581757734961" duration="3294000" />
       <workItem from="1582011853882" duration="15104000" />
-      <workItem from="1582339778201" duration="586000" />
+      <workItem from="1582339778201" duration="1856000" />
+      <workItem from="1582341689302" duration="256000" />
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1582340856462</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582340856462</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -676,13 +709,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211175000" />
+    <option name="totallyTimeSpent" value="212701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868765" visible="true" weight="0.12632374" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49868765" visible="true" weight="0.329429" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -692,7 +725,7 @@
       <window_info id="Web" order="7" sideWeight="0.5013123" side_tool="true" weight="0.24130106" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3065574" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4977307" visible="true" weight="0.32459018" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" weight="0.32459018" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3672131" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -702,7 +735,7 @@
       <window_info anchor="bottom" id="Database Console" order="9" weight="0.34262297" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3295082" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5030257" side_tool="true" weight="0.29016393" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5030257" side_tool="true" weight="0.28955695" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49924356" weight="0.06065574" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="15" weight="0.3295082" />
@@ -713,7 +746,7 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.1452345" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.022692889" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.021961933" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -758,6 +791,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1035,8 +1072,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyProject-Controller/src/main/java/com/nf/tang/controller/UserGroupsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+        <state relative-caret-position="775">
+          <caret line="36" column="53" lean-forward="true" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
           <folding>
             <element signature="e#1674#1675#0" expanded="true" />
             <element signature="e#1699#1700#0" expanded="true" />
