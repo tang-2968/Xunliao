@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.tang.dao.FriendsDao">
+    <insert id="addFriend">
+        insert into friends(f_loginId, f_friendGroupsId, f_name) values
+        (#{f_loginId},#{f_friendGroupsId},#{f_name})
+    </insert>
+
+    <delete id="delFriend">
+        delete from friends where f_friendGroupsId = #{f_friendGroupsId}
+    </delete>
+
+    <select id="selFriend" resultType="com.nf.tang.entity.Friends">
+        select * from friends where f_friendGroupsId = #{f_friendGroupsId}
+    </select>
+
+    <select id="getAll" resultType="com.nf.tang.entity.Friends">
+        select * from friends
+    </select>
+
+    <update id="updFriend">
+        update friends set f_name = #{f_name}
+        where f_loginId = #{f_loginId}
+    </update>
+</mapper>

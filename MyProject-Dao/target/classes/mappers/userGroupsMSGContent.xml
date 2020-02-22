@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.tang.dao.UserGroupsMSGContentDao">
+
+    <!--    //添加消息记录-->
+    <insert id="addMessages">
+        insert into user_groupsmsgcontent(gm_content, gm_fromId, gm_fromUName, gm_createTime)
+        values (#{gm_content},#{gm_fromId},#{gm_fromUName},#{gm_createTime})
+    </insert>
+
+    <!--    //根据id删除群消息-->
+    <delete id="delMessages">
+        delete from user_groupsmsgcontent where gm_id = #{gm_id}
+    </delete>
+
+
+    <!--    //查询所有群消息-->
+    <select id="getAll" resultType="com.nf.tang.entity.User_GroupsMSGContent">
+        select * from user_groupsmsgcontent
+    </select>
+
+    <!--    //删除所有消息记录-->
+    <delete id="delAllMessages">
+        delete from user_groupsmsgcontent
+    </delete>
+</mapper>

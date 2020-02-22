@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.tang.dao.UserInfoDao">
+    <insert id="addUserInfo">
+        insert into user(u_loginId, u_nickName, u_passWord, u_signaTure, u_sex, u_birthday, u_telephone, u_name, u_email, u_intro, u_headPortrait, u_shengXiao, u_age, u_constellation, u_bloodType, u_school, u_vocation, u_nation, u_province, u_city) VALUES
+        values (#{u_loginId},#{u_nickName},#{u_passWord},#{u_signaTure},#{u_sex},#{u_birthday},#{u_telephone},#{u_name},#{u_email},#{u_intro},#{u_headPortrait},#{u_shengXiao},#{u_age},#{u_constellation},#{u_bloodTye},#{u_school},#{u_vocation},#{u_nation},#{u_province},#{u_city})
+    </insert>
+
+    <delete id="delUserInfo">
+        delete from user where u_loginId = #{u_loginId}
+    </delete>
+    
+    <select id="selUser" resultType="com.nf.tang.entity.UserInfo">
+        select u_loginId,u_nickName,u_age,u_sex from user where u_loginId = #{u_loginId}
+    </select>
+
+    <select id="fuzzyquery" resultType="com.nf.tang.entity.UserInfo">
+        select u_loginId,u_nickName,u_age,u_sex from user
+        <where>
+            <if test="u_nickName != null">
+                u_nickName like #{name}"%"
+            </if>
+        </where>
+    </select>
+
+    <select id="getAll" resultType="com.nf.tang.entity.UserInfo">
+        select * from user
+    </select>
+
+    <update id="updUserInfo">
+        update user set u_id, u_loginId, u_nickName, u_passWord, u_signaTure, u_sex, u_birthday, u_telephone, u_name, u_email, u_intro, u_headPortrait, u_shengXiao, u_age, u_constellation, u_bloodType, u_school, u_vocation, u_nation, u_province, u_city
+        where u_id = #{u_id}
+    </update>
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.tang.dao.FriendGroupsDao">
+
+    <insert id="addFriendGroups">
+        insert into friendgroups(fg_name, fg_user)
+        values (#{fg_name},#{fg_userId})
+    </insert>
+
+    <delete id="delFriendGroups">
+        delete from friendgroups where fg_id = #{fg_id}
+    </delete>
+
+    <update id="updFriendGroups">
+        update friendgroups set fg_name = #{fg_name} where fg_id = #{fg_id}
+    </update>
+
+    <select id="selFriendGroups" resultType="com.nf.tang.entity.FriendGroups">
+        select fg_name from friendgroups
+    </select>
+</mapper>

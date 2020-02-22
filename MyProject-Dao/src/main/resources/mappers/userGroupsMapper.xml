@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.tang.dao.UserGroupsDao">
+
+<!--    //创建一个群-->
+    <insert id="addUserGroups">
+        insert into user_groups(ug_name, ug_createTime, ug_iCon, ug_notice, ug_intro,ug_owner) INSERT
+        values (#{ug_name},#{ug_createTime},#{ug_iCon},#{ug_notice},#{ug_intro},#{ug_owner})
+    </insert>
+
+<!--    //修改群的信息-->
+    <update id="updUserGroups">
+        update user_groups set ug_name = #{ug_name},ug_createTime = #{ug_createTime}, ug_iCon = #{ug_iCon},
+        ug_notice = #{ug_notice},ug_intro = #{ug_intro}
+         where ug_id = #{ug_id}
+    </update>
+
+<!--    //注销群-->
+    <delete id="delUserGroups">
+        delete from user_groups where ug_id = #{ug_id}
+    </delete>
+
+<!--    //根据id查询群-->
+    <select id="selUserGroups" resultType="com.nf.tang.entity.User_Groups">
+        select * from user_groups where ug_id = #{ug_id}
+    </select>
+
+<!--    //根据群名称查询群-->
+    <select id="selUserGroupsByName" resultType="com.nf.tang.entity.User_Groups">
+        select * from user_groups where ug_name = #{ug_name}
+    </select>
+
+
+<!--    //查询自己所在的所有群-->
+    <select id="getAllById" resultType="com.nf.tang.entity.User_Groups">
+        select * from user_groups where ug_owner = #{ug_owner}
+    </select>
+</mapper>

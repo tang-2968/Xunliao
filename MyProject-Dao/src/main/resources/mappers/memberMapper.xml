@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.tang.dao.MemberDao">
+    <insert id="addMember">
+        insert into member(u_loginId) values (#{u_loginId})
+    </insert>
+
+    <delete id="delMember">
+        delete from member where u_loginId
+    </delete>
+</mapper>
